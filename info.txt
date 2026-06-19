@@ -1,0 +1,12 @@
+
+
+Requirements:
+pip install -r requirements.txt
+
+Change Topics: 
+SCAN_TOPIC = "/d9qv9c/scan_f_filtered"
+IMAGE_TOPIC = "/d9qv9c/mono_ft/image_raw"
+MARKER_TOPIC = "/markers"
+
+How to run:
+python fused_detector.py

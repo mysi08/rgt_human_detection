@@ -1,0 +1,9 @@
+opencv-python==4.13.0
+numpy==1.26.4
+opencv-python-headless==4.13.0
+openvino==2026.2.0
+openvino-telemetry==2025.2.0
+torch==2.11.0
+torchvision==0.26.0
+ultralytics==8.4.51
+ultralytics-thop==2.0.19
