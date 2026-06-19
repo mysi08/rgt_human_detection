@@ -1,0 +1,20 @@
+<package format="3">
+  <name>obt</name>
+  <version>5.2.0</version>
+  <description>Modular Asynchronous YOLO11 OpenVINO + LiDAR Frustum Fusion Package</description>
+  <maintainer email="user@todo.todo">rgt</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+

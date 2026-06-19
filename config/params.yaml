@@ -1,0 +1,28 @@
+/yolo_lidar_fusion:
+  ros__parameters:
+    enable_debug_image: true
+    process_fps: 10.0
+    openvino_num_threads: 1
+    yolo_max_candidates: 40
+    cam_hfov: 40.0
+    cam_vfov: 60.0
+    cam_height: 1.6
+    lidar_height: 0.3
+    lidar_behind: 0.3
+    max_range: 5.0
+    human_dist_min: 1.5
+    human_dist_max: 4.0
+    min_human_cluster_points: 2
+    gap_split_dist: 0.6
+    conf_threshold: 0.40
+    nms_threshold: 0.45
+    model_path: ""
+
+    # LiDAR Geometry Tuning
+    jump_noise_floor: 0.06      # Baseline jump distance in meters
+    min_human_points: 3         # Minimum laser hits to be considered a human
+    max_human_points: 60        # Max laser hits (rejects massive walls)
+    min_human_width: 0.05       # Minimum width in meters (5cm)
+    max_human_width: 0.70       # Max width in meters (70cm - catches people carrying bags)
+    max_linearity_ratio: 15.0   # PCA ratio (higher = flatter object). Reject > 15.
+    min_yolo_overlap: 0.50      # Require 50% of LiDAR cluster to be inside YOLO box
